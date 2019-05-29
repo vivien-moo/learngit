@@ -1,5 +1,6 @@
 from numpy import * 
 print "modify  the file"
+print "modify  the file second time"
 
 dataSet, labels =thknn.createDataSet()
 testX = array([1.2, 1.0])
