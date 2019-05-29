@@ -1,0 +1,20 @@
+from numpy import * 
+
+dataSet, labels =thknn.createDataSet()
+testX = array([1.2, 1.0])
+k = 3
+outputLabel = thknn.kNNClassify(testX, dataSet, labels, 3)
+print "Your input is:", testX, "and classified to class: ", outputLabel
+
+testX = array([0.1, 0.3])
+outputLabel = thknn.kNNClassify(testX, dataSet, labels, 3)
+print "Your input is:", testX, "and classified to class: ", outputLabel'''
+
+#coding=utf-8
+import myknn
+import time
+
+start = time.clock()    
+myknn.testHandWritingClass()  
+end = time.clock()
+print "run time: %f s" % (end - start)  
